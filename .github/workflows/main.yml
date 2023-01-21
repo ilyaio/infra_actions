@@ -2,9 +2,9 @@ name: CI
 
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
   pull_request:
-    branches: [ master ]
+    branches: [ main ]
 
 jobs:
   build:
@@ -12,9 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-    
-    - uses: actions/checkout@v2
-    
+        
     - name: Run one line script
       run: echo Hello!
     
