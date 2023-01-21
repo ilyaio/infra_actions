@@ -15,6 +15,7 @@ jobs:
     - name: Set up Python
       # Запуск actions setup-python — готового скрипта 
       # для развёртывания окружения Python
+      
       uses: actions/setup-python@v2
       with:
         python-version: 3.7
@@ -23,7 +24,7 @@ jobs:
 
       run: |
         # обновление pip 
-        python -m pip intall --upgrade pip
+        python -m pip install --upgrade pip
         # установка flake8 и его плагинов
         pip install flake8 pep8-naming flake8-broken-line flake8-return flake8-isort
         # установка зависимостей
