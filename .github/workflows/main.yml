@@ -41,7 +41,7 @@ jobs:
         python manage.py test
 
   # Собрать и отправить образ приложения на DockerHub
-  build_and_push_to_docket_hub:
+  build_and_push_to_docker_hub:
     name: Push Docker Hub image to Docker Hub
     runs-on: ubuntu-latest
     needs: tests
